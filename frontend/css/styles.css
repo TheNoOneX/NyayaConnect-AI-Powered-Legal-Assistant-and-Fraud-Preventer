@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  color: #0f172a;
+}
+
+/* App container */
+.app {
+  max-width: 420px;
+  margin: auto;
+}
+
+/* Logo section */
+.logo-box {
+  text-align: center;
+  margin-top: 40px;
+  /* margin-bottom: 30px; */
+}
+
+.logo-box img{
+    height: 20vw;
+}
+.logo-box h1 {
+  margin: 10px 0 5px;
+}
+
+.logo-box p {
+  color: #475569;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Icon card */
+.icon-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Select */
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: #1e40af;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Mic */
+.mic-container {
+  width: 90px;
+  height: 90px;
+  margin: 30px auto 10px;
+  background: #1e40af;
+  color: white;
+  border-radius: 50%;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mic-text {
+  text-align: center;
+  color: #475569;
+}
+
+
+/* Muted text */
+.muted-text {
+  color: #475569;
+  font-size: 14px;
+}
+
+/* Textarea */
+.problem-textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Helper text */
+.helper-text {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Upload card specific */
+.upload-card {
+  text-align: center;
+}
+
+/* Big camera icon */
+.upload-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* Upload text */
+.upload-text {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* File input */
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px dashed #94a3b8;
+  background: #f8fafc;
+}
+
+/* Voice card */
+.voice-card {
+  text-align: center;
+}
+
+/* Mic button */
+.mic-button {
+  width: 110px;
+  height: 110px;
+  margin: 10px auto 14px;
+  background: #1e40af;
+  color: white;
+  border-radius: 50%;
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Recording state */
+.mic-button.recording {
+  background: #dc2626;
+}
+
+/* Voice status text */
+.voice-status {
+  font-size: 15px;
+  color: #475569;
+}
+
+/* Spoken text */
+.spoken-text {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+
+/* Full screen loader overlay */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(248, 250, 252, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Hide loader */
+.hidden {
+  display: none;
+}
+
+/* Loader box */
+.loader-box {
+  text-align: center;
+}
+
+/* Spinner animation */
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #cbd5e1;
+  border-top: 5px solid #1e40af;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.btn.loading {
+  background: #94a3b8;
+  pointer-events: none;
+}
+
+/* Icon + title row */
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Simple lists */
+.simple-list {
+  padding-left: 18px;
+  margin: 8px 0 0;
+}
+
+.simple-list li {
+  margin-bottom: 6px;
+}
+
+/* Small muted text */
+.small-text {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+
+
+
+
+
