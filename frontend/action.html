@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Action</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- Full Screen Loader -->
+
+
+<body>
+
+<div class="app">
+
+  <div class="header">
+    <h2 data-i18n="choose_help">How can we help?</h2>
+
+  </div>
+
+  <!-- Write Query -->
+ <div class="card icon-card" onclick="location.href='write.html'">
+  ✍️
+  <span data-i18n="write_problem">Write your problem</span>
+
+</div>
+
+
+  <!-- Upload Document -->
+  <div class="card icon-card" onclick="location.href='upload.html'">
+  📄
+  <span data-i18n="upload_document">Upload document</span>
+
+</div>
+
+
+  <!-- Voice Mode -->
+ <div class="mic-container" onclick="location.href='voice.html'">
+  🎙️
+</div>
+
+<p class="mic-text" data-i18n="speak_problem">
+  Speak your problem
+</p>
+
+
+<script src="new_script.js"></script>
+</body>
+</html>

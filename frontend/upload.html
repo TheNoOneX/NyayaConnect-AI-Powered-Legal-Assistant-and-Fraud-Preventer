@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- Full Screen Loader -->
+<div id="loader" class="loader-overlay hidden">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <p id="loaderText">Please wait...</p>
+  </div>
+</div>
+
+
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+  
+    <h2 data-i18n="upload_title">📄 Upload Document</h2>
+
+    <p id="langText" class="muted-text"></p>
+  </div>
+
+  <!-- Upload Card -->
+  <div class="card upload-card">
+    <div class="upload-icon">📸</div>
+
+  
+
+    <p class="upload-text" data-i18n="upload_text">
+      Take a photo or upload a document
+    </p>
+
+
+    <input
+      type="file"
+      id="documentFile"
+      accept="image/*,.pdf"
+      class="file-input"
+    />
+
+    <p class="helper-text" data-i18n="write_example">
+      Example: Rent agreement, insurance letter
+    </p>
+
+
+
+  </div>
+
+  <!-- Continue Button -->
+<button class="btn" onclick="saveDocument()" data-i18n="continue">
+  Continue
+</button>
+
+
+</div>
+
+<script src="new_script.js"></script>
+</body>
+</html>

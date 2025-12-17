@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Write Your Problem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- Full Screen Loader -->
+<div id="loader" class="loader-overlay hidden">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <p id="loaderText">Please wait...</p>
+  </div>
+</div>
+
+
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <h2 data-i18n="write_title">✍️ Write Your Problem</h2>
+
+    <p id="langText" class="muted-text"></p>
+  </div>
+
+  <!-- Input Card -->
+  <div class="card">
+    <textarea
+  id="userProblem"
+  rows="6"
+  class="problem-textarea"
+  data-i18n-placeholder="write_placeholder"
+  placeholder="Write your problem here...">
+</textarea>
+
+
+    <p class="helper-text" data-i18n="write_example">
+  Example: My landlord is not returning my deposit
+    </p>
+
+  </div>
+
+  <!-- Continue Button -->
+  <button class="btn" onclick="saveProblem()" data-i18n="continue">
+  Continue
+</button>
+
+
+</div>
+
+<script src="new_script.js"></script>
+</body>
+</html>

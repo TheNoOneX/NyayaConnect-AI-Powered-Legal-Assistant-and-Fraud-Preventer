@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <h2 data-i18n="result_title">📄 Your Legal Help</h2>
+  <p class="muted-text" data-i18n="based_on_law">
+    Based on Indian law
+  </p>
+
+
+  <!-- Summary -->
+  <div class="card">
+    <div class="icon-row">
+      🧠 <strong data-i18n="summary">Summary</strong>
+
+    </div>
+    <p id="summaryText">
+      We are analyzing your problem…
+    </p>
+  </div>
+
+  <!-- Red Flags -->
+  <div class="card">
+    <div class="icon-row">
+      🚩 <strong data-i18n="what_wrong">What is wrong</strong>
+
+    </div>
+    <ul id="redFlags" class="simple-list">
+      <!-- JS will fill -->
+    </ul>
+  </div>
+
+  <!-- Law Section -->
+  <div class="card">
+    <div class="icon-row">
+  
+      ⚖️ <strong data-i18n="law_applied">Law Applied</strong>
+
+    </div>
+    <ul id="lawList" class="simple-list">
+      <!-- JS will fill -->
+    </ul>
+   <p class="muted-text small-text" data-i18n="law_source">
+      Source: Government of India
+    </p>
+
+  </div>
+
+  <!-- Action -->
+  <div class="card">
+    <div class="icon-row">
+  
+      👉 <strong data-i18n="next_steps">What you should do</strong>
+
+    </div>
+    <ul id="nextSteps" class="simple-list">
+      <!-- JS will fill -->
+    </ul>
+  </div>
+
+
+  <div class="card">
+  <div class="icon-row">
+  
+    🔗 <strong data-i18n="references">References</strong>
+
+  </div>
+  <ul id="references" class="simple-list"></ul>
+</div>
+
+
+  <!-- Buttons -->
+
+  <button class="btn" onclick="copyResult()" data-i18n="copy">
+  Copy
+</button>
+
+<button class="btn btn-success" onclick="window.print()" data-i18n="print">
+  Print
+</button>
+
+</div>
+
+<!-- Loader -->
+<!-- <div id="loader" class="loader-overlay hidden">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <p id="loaderText">Preparing result...</p>
+  </div>
+</div> -->
+
+<script src="new_script.js"></script>
+</body>
+</html>

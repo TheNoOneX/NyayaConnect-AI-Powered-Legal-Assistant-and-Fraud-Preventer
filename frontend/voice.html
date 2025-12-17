@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voice Mode</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- Full Screen Loader -->
+<div id="loader" class="loader-overlay hidden">
+  <div class="loader-box">
+    <div class="spinner"></div>
+    <p id="loaderText">Please wait...</p>
+  </div>
+</div>
+
+
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <h2 data-i18n="voice_title">🎙️ Speak Your Problem</h2>
+
+    <p id="langText" class="muted-text"></p>
+  </div>
+
+  <!-- Voice Card -->
+  <div class="card voice-card">
+
+    <!-- Mic Button -->
+    <div id="micButton" class="mic-button" onclick="toggleRecording()">
+      🎤
+    </div>
+
+    <!-- Status -->
+    <p id="voiceStatus" class="voice-status" data-i18n="voice_hint">
+  Tap the mic and speak
+    </p>
+
+
+  </div>
+
+  <!-- Spoken Text Preview -->
+  <div class="card">
+    
+    <p class="muted-text" data-i18n="summary">What we heard:</p>
+
+    <p id="spokenText" class="spoken-text">
+      (Your speech will appear here)
+    </p>
+  </div>
+
+  <!-- Continue Button -->
+<button class="btn" onclick="saveVoiceText()" data-i18n="continue">
+  Continue
+</button>
+
+</div>
+
+<script src="new_script.js"></script>
+</body>
+</html>
